@@ -10,6 +10,7 @@ public class SellPlant : MonoBehaviour
 
     public void SellOnePlantType(Plant plantToSell)
     {
+        _sellPlantText.gameObject.SetActive(true);
         if (_playerMain.PlantBag.PlantBagList.Count > 0)
         {
             bool plantFound = false;
@@ -41,15 +42,22 @@ public class SellPlant : MonoBehaviour
 
     public void SellAllPlant()
     {
+        _sellPlantText.gameObject.SetActive(true);
         if (_playerMain.PlantBag.PlantBagList.Count > 0)
         {
+            int plantsBagSales = 0;
             foreach (Plant plant in _playerMain.PlantBag.PlantBagList)
             {
-                _playerMain.PlantBag.PlantBagList.Remove(plant);
-                _playerMain.Money.SetMoneyAmount(_playerMain.Money.GetMoneyAmount() + plant.SellingPrice);
+                plantsBagSales += plant.SellingPrice;
             }
 
+            _playerMain.Money.SetMoneyAmount(_playerMain.Money.GetMoneyAmount() + plantsBagSales);
+            _playerMain.PlantBag.PlantBagList.Clear();
             _sellPlantText.text = $"Thank you very much !";
+        }
+        else
+        {
+            _sellPlantText.text = $"Your bag is empty :'(";
         }
     }
 }

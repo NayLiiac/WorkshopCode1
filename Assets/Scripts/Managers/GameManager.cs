@@ -5,15 +5,19 @@ public class GameManager : MonoBehaviour
     // Singleton
     private static GameManager _instance = null;
     private GameManager() { }
+
     public static GameManager Instance => _instance;
 
-    private void Awake() {
+    private void Awake()
+    {
         // Singleton
-        if (_instance != null && _instance != this) {
+        if (_instance != null && _instance != this)
+        {
             Destroy(this.gameObject);
             return;
         }
-        else {
+        else
+        {
             _instance = this;
         }
     }

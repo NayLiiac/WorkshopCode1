@@ -2744,7 +2744,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5252849925717649500}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8900570160233868719}
+        m_TargetAssemblyTypeName: BuySeed, Assembly
+        m_MethodName: SeedBought
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7632215544601082494, guid: 2025c869df654ca4abd781d6d407c8ec, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3507160682771045300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,7 +3798,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Buyl 1
+  m_text: Buy 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5356,7 +5368,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $ 500
+  m_text: $ 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

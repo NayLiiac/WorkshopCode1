@@ -48,7 +48,6 @@ public class PlayerAction : MonoBehaviour
                             }
 
                         }
-
                         else if (_tempHarvester != null && _tempHarvester.Sow.SowedSeed.GetSeedGrownUp())
                         {
                             Debug.Log("Harvest");
