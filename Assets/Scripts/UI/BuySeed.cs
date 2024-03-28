@@ -1,6 +1,9 @@
 ﻿using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Class who manages seeds buying in the game
+/// </summary>
 public class BuySeed : MonoBehaviour
 {
     [SerializeField]
@@ -8,6 +11,10 @@ public class BuySeed : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _boughtSeedText;
 
+    /// <summary>
+    /// Method called by buttons in the Seed Merchant, allows player to buy new seeds of his choice, depending of its money.
+    /// </summary>
+    /// <param name="seed"></param>
     public void SeedBought(Seed seed)
     {
         _boughtSeedText.gameObject.SetActive(true);

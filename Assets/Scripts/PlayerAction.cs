@@ -6,12 +6,6 @@ public class PlayerAction : MonoBehaviour
     [SerializeField]
     private LayerMask _layerMask;
 
-    [Header("Temporary Values")]
-    [SerializeField]
-    private GameObject _gameObjectTouched;
-    [SerializeField]
-    public HarvesterMain TempHarvester { get; private set; }
-
     [Header("Refs")]
     [SerializeField]
     private PlayerMain _playerMain;
@@ -19,6 +13,13 @@ public class PlayerAction : MonoBehaviour
     private SeedMerchant _merchant;
     [SerializeField]
     private SeedSelectorUI _seedSelectorUI;
+
+    [Header("Temporary Values")]
+    [SerializeField]
+    private GameObject _gameObjectTouched;
+
+    [field : SerializeField]
+    public HarvesterMain TempHarvester { get; private set; }
 
     private void Start()
     {

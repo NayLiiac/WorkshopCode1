@@ -1,6 +1,9 @@
 ﻿using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Class who manages plants selling in the game
+/// </summary>
 public class SellPlant : MonoBehaviour
 {
     [SerializeField]
@@ -8,6 +11,10 @@ public class SellPlant : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _sellPlantText;
 
+    /// <summary>
+    /// Sell one type of plant from the player's plant bag
+    /// </summary>
+    /// <param name="plantToSell"></param>
     public void SellOnePlantType(Plant plantToSell)
     {
         _sellPlantText.gameObject.SetActive(true);
@@ -40,6 +47,9 @@ public class SellPlant : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sell all plants in the player's plant bag directly
+    /// </summary>
     public void SellAllPlant()
     {
         _sellPlantText.gameObject.SetActive(true);

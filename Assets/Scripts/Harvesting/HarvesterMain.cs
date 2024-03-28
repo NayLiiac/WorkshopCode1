@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Main for Harvesting classes
+/// </summary>
 public class HarvesterMain : MonoBehaviour
 {
     public TilledDirt Dirt;

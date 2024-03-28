@@ -10,12 +10,18 @@ public class SeedChosenUI : MonoBehaviour
     [SerializeField]
     private PlayerMain _playerMain;
 
+    /// <summary>
+    /// Choose which seed the player wants to be sowed.
+    /// </summary>
+    /// <param name="seed"></param>
     public void ChooseThisSeed(Seed seed)
     {
         bool seedFound = false;
+
+        // Checks if the player has the corresponding seed
         foreach (Seed seed1 in _playerMain.SeedBag.SeedBagList)
         {
-            if(seed1.SeedName == seed.SeedName)
+            if (seed1.SeedName == seed.SeedName)
             {
                 _playerMain.PlAction.TempHarvester.Sow.SowASeed(seed1);
                 _playerMain.SeedBag.SeedBagList.Remove(seed1);

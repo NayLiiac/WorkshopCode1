@@ -21,11 +21,19 @@ public class SowSeed : MonoBehaviour
         _harvesterMain.Grow.StartGrowingSeed(seed);
     }
 
+    /// <summary>
+    /// Allows to know which seed is growing/grown up.
+    /// </summary>
+    /// <returns> Seed </returns>
     public Seed GetSowedSeed()
     {
         return _sowedSeed;
     }
 
+    /// <summary>
+    /// Set seed planted.
+    /// </summary>
+    /// <param name="seed"></param>
     public void SetSowedSeed(Seed seed)
     {
         _sowedSeed = seed;

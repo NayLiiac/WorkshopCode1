@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Class who open and close the seed selector, used when a player wants to sow a seed.
+/// </summary>
 public class SeedSelectorUI : MonoBehaviour
 {
     [SerializeField]

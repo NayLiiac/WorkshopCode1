@@ -1,6 +1,9 @@
 ﻿using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Class to manage player's money on UI
+/// </summary>
 public class PlayerMoneyUI : MonoBehaviour
 {
     [SerializeField]

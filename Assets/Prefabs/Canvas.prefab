@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5216820205009343106}
   m_Layer: 5
-  m_Name: BuySeedPanel
+  m_Name: BeetSeedPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4803595716901387270}
   m_Layer: 5
-  m_Name: PlantSellingPanel
+  m_Name: BeetSellingPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -436,7 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5791550324255845586}
   m_Layer: 5
-  m_Name: BuySeedPanel
+  m_Name: WaterMelonSeedPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -474,7 +474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3839706500167053198}
   m_Layer: 5
-  m_Name: Seed
+  m_Name: SunflowerSeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -760,7 +760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 7a3d3637c4a3f0e4b99521628dff1ad6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -890,7 +890,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2698378971460239753}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 318780155407091959}
+        m_TargetAssemblyTypeName: SellPlant, Assembly
+        m_MethodName: SellOnePlantType
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5108849369204695428, guid: 45552fb9ea0ec034aaee3bb2b1b40c3f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Plant, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1121892481838554354
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2110547470211417806}
   m_Layer: 5
-  m_Name: PlantSellingPanel
+  m_Name: SunflowerSellingPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -964,8 +976,8 @@ RectTransform:
   - {fileID: 3779516410435561654}
   - {fileID: 3117949075261604456}
   - {fileID: 2043496750863540500}
-  - {fileID: 4803595716901387270}
   - {fileID: 2110547470211417806}
+  - {fileID: 4803595716901387270}
   m_Father: {fileID: 5254291735028735755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1420,7 +1432,7 @@ GameObject:
   - component: {fileID: 2225097158954869474}
   - component: {fileID: 9007833001786548081}
   m_Layer: 5
-  m_Name: SeedButton
+  m_Name: ChooseBeetSeedButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1473,7 +1485,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 7a3d3637c4a3f0e4b99521628dff1ad6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1506,7 +1518,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1526,7 +1538,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2225097158954869474}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6751567403963794387}
+        m_TargetAssemblyTypeName: SeedChosenUI, Assembly
+        m_MethodName: ChooseThisSeed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5888312984728643297, guid: 45552fb9ea0ec034aaee3bb2b1b40c3f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2074478879324413725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,7 +1750,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6d73fb29f27c1645b5ac1c38eca447b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1968,7 +1992,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1989,13 +2013,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5577432813153590066}
-        m_TargetAssemblyTypeName: SeedSelectorUI, Assembly
-        m_MethodName: CloseSeedSelectorUI
-        m_Mode: 1
+      - m_Target: {fileID: 6751567403963794387}
+        m_TargetAssemblyTypeName: SeedChosenUI, Assembly
+        m_MethodName: ChooseThisSeed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: -425698994660001588, guid: 3d8a84d500ca8e7469f22f8fae8e6e23, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2066,7 +2090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6078a15b6f7310243b8114b41bbb4452, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2196,7 +2220,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1907792978776535470}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 318780155407091959}
+        m_TargetAssemblyTypeName: SellPlant, Assembly
+        m_MethodName: SellOnePlantType
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1002675232127663081, guid: 2e5c4f78986fc73429ccb093b2c4f4d4, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Plant, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2476198821933337460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,7 +2428,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4112175406434561305}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8900570160233868719}
+        m_TargetAssemblyTypeName: BuySeed, Assembly
+        m_MethodName: SeedBought
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -1115133468921768193, guid: 2e5c4f78986fc73429ccb093b2c4f4d4, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2940118855982304750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3201,7 +3249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2043496750863540500}
   m_Layer: 5
-  m_Name: PlantSellingPanel
+  m_Name: WatermelonSellingPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3641,7 +3689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5033588403070904354}
   m_Layer: 5
-  m_Name: BuySeedPanel
+  m_Name: SunflowerSeedPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4022,7 +4070,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1068010125669130253}
   m_Layer: 5
-  m_Name: Seed
+  m_Name: BeetSeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4270,7 +4318,7 @@ GameObject:
   - component: {fileID: 3014859896894282313}
   - component: {fileID: 1107513260987299493}
   m_Layer: 5
-  m_Name: SeedButton
+  m_Name: ChooseWatermelonSeedButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4323,7 +4371,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6d73fb29f27c1645b5ac1c38eca447b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4356,7 +4404,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4376,7 +4424,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3014859896894282313}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6751567403963794387}
+        m_TargetAssemblyTypeName: SeedChosenUI, Assembly
+        m_MethodName: ChooseThisSeed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: -1115133468921768193, guid: 2e5c4f78986fc73429ccb093b2c4f4d4, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4586422734337781130
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,6 +4517,151 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4758925776430281104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1335624970354718395}
+  - component: {fileID: 2124998330812444599}
+  - component: {fileID: 8805139627488908677}
+  - component: {fileID: 2281120149926255845}
+  - component: {fileID: 2995100367230541408}
+  m_Layer: 5
+  m_Name: QuitGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1335624970354718395
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758925776430281104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3309359361604505436}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 914, y: 493}
+  m_SizeDelta: {x: 64, y: 64}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2124998330812444599
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758925776430281104}
+  m_CullTransparentMesh: 1
+--- !u!114 &8805139627488908677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758925776430281104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1514978190, guid: 46874d0b77cfb5743b8613b497308746, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2281120149926255845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758925776430281104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8805139627488908677}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2995100367230541408}
+        m_TargetAssemblyTypeName: QuitGame, Assembly
+        m_MethodName: QuitTheGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2995100367230541408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758925776430281104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26aaec2538fa7ba4d8129c29bd84d85b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4803658142828527904
 GameObject:
   m_ObjectHideFlags: 0
@@ -4828,7 +5033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6078a15b6f7310243b8114b41bbb4452, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4903,7 +5108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 7a3d3637c4a3f0e4b99521628dff1ad6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4978,7 +5183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f6d73fb29f27c1645b5ac1c38eca447b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5255,7 +5460,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7302126181137609723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8900570160233868719}
+        m_TargetAssemblyTypeName: BuySeed, Assembly
+        m_MethodName: SeedBought
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5888312984728643297, guid: 45552fb9ea0ec034aaee3bb2b1b40c3f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6102082369987581528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5355,7 +5572,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
+    m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5376,21 +5593,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5577432813153590066}
-        m_TargetAssemblyTypeName: SeedSelectorUI, Assembly
-        m_MethodName: CloseSeedSelectorUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
+        m_TargetAssemblyTypeName: GameManager, Assembly
+        m_MethodName: SetAnyUIOpened
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5446,7 +5651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1027270068784011246}
   m_Layer: 5
-  m_Name: Seed
+  m_Name: WatermelonSeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5804,7 +6009,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5957,7 +6162,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9098672560535841540}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8900570160233868719}
+        m_TargetAssemblyTypeName: BuySeed, Assembly
+        m_MethodName: SeedBought
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8616679266831438082, guid: c4131c12d37d7fa478920b215aacd4ad, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7243686395580882683
 GameObject:
   m_ObjectHideFlags: 0
@@ -6592,7 +6809,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 200
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -6963,7 +7180,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1037638452834810605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 318780155407091959}
+        m_TargetAssemblyTypeName: SellPlant, Assembly
+        m_MethodName: SellOnePlantType
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 41781295645863300, guid: c4131c12d37d7fa478920b215aacd4ad, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Plant, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8300905759431472104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7129,6 +7358,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1335624970354718395}
   - {fileID: 18560038402756504}
   - {fileID: 7139479967643550527}
   - {fileID: 8278882637207717567}
@@ -7236,8 +7466,8 @@ RectTransform:
   - {fileID: 1195626608614891397}
   - {fileID: 8475672477059599504}
   - {fileID: 5791550324255845586}
-  - {fileID: 5216820205009343106}
   - {fileID: 5033588403070904354}
+  - {fileID: 5216820205009343106}
   m_Father: {fileID: 3827575315871745559}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7296,7 +7526,7 @@ GameObject:
   - component: {fileID: 1097399574815763549}
   - component: {fileID: 4704036565713622343}
   m_Layer: 5
-  m_Name: SeedButton
+  m_Name: SunflowerSeedButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7349,7 +7579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6078a15b6f7310243b8114b41bbb4452, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7382,7 +7612,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7402,7 +7632,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1097399574815763549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6751567403963794387}
+        m_TargetAssemblyTypeName: SeedChosenUI, Assembly
+        m_MethodName: ChooseThisSeed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8616679266831438082, guid: c4131c12d37d7fa478920b215aacd4ad, type: 3}
+          m_ObjectArgumentAssemblyTypeName: Seed, Assembly
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8635949696785837525
 GameObject:
   m_ObjectHideFlags: 0
