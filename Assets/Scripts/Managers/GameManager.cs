@@ -4,7 +4,9 @@ public class GameManager : MonoBehaviour
 {
     // Singleton
     private static GameManager _instance = null;
-    private GameManager() { }
+    private GameManager()
+    {
+    }
 
     public static GameManager Instance => _instance;
 

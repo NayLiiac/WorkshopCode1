@@ -16,7 +16,6 @@ public class PlayerMoney : MonoBehaviour
     public void SetMoneyAmount(int money)
     {
         _moneyAmount = money;
-        Debug.Log(_moneyAmount);
         MoneyAmountChanged?.Invoke(_moneyAmount);
     }
 }

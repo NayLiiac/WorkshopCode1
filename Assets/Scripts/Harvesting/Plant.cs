@@ -7,5 +7,4 @@ public class Plant : MonoBehaviour
 
     [field: SerializeField]
     public int SellingPrice { get; private set; }
-
 }

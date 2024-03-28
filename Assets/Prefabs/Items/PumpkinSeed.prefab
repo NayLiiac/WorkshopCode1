@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2869334391910766264
+--- !u!1 &2627917600170901844
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6603151481197409731}
-  - component: {fileID: 3082594584601973319}
-  - component: {fileID: 145364692529364548}
-  - component: {fileID: 8886416310218374602}
-  - component: {fileID: 7632215544601082494}
-  - component: {fileID: 3257114470118671323}
-  - component: {fileID: 8889765282248777901}
+  - component: {fileID: 6883396321408968307}
+  - component: {fileID: 7834956331969135143}
+  - component: {fileID: 3438748668490052683}
+  - component: {fileID: 8026959743148375146}
+  - component: {fileID: -425698994660001588}
+  - component: {fileID: -3686018709293609439}
+  - component: {fileID: -6133977692811765920}
   m_Layer: 0
-  m_Name: CabbageSeed
+  m_Name: PumpkinSeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6603151481197409731
+--- !u!4 &6883396321408968307
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869334391910766264}
+  m_GameObject: {fileID: 2627917600170901844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3082594584601973319
+--- !u!33 &7834956331969135143
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869334391910766264}
-  m_Mesh: {fileID: 4300000, guid: 613f9cdbc89e1df458f716a6cef6445a, type: 3}
---- !u!23 &145364692529364548
+  m_GameObject: {fileID: 2627917600170901844}
+  m_Mesh: {fileID: 4300000, guid: 8333e1232287a4741b4639535fa37151, type: 3}
+--- !u!23 &3438748668490052683
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869334391910766264}
+  m_GameObject: {fileID: 2627917600170901844}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -87,13 +87,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8886416310218374602
+--- !u!64 &8026959743148375146
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869334391910766264}
+  m_GameObject: {fileID: 2627917600170901844}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -108,45 +108,45 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 43131310796612222, guid: 7074d71ca8cc46f48959d37c091b633f, type: 2}
---- !u!114 &7632215544601082494
+  m_Mesh: {fileID: 43926965942162208, guid: 46567592235a83b478bcf90e82301db9, type: 2}
+--- !u!114 &-425698994660001588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869334391910766264}
+  m_GameObject: {fileID: 2627917600170901844}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e3599135d062ff489877eeb7bdfebe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GrowSeedAnim: {fileID: 8889765282248777901}
+  GrowSeedAnim: {fileID: -6133977692811765920}
   _seedGrownUp: 0
-  <SeedName>k__BackingField: Cabbage Seed
-  <PurchasePrice>k__BackingField: 100
---- !u!114 &3257114470118671323
+  <SeedName>k__BackingField: Pumpkin Seed
+  <PurchasePrice>k__BackingField: 500
+--- !u!114 &-3686018709293609439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869334391910766264}
+  m_GameObject: {fileID: 2627917600170901844}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 541ecc5825c2e2d49acd1e53822ffce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <PlantName>k__BackingField: Cabbage
-  <SellingPrice>k__BackingField: 250
---- !u!95 &8889765282248777901
+  <PlantName>k__BackingField: Pumpkin
+  <SellingPrice>k__BackingField: 750
+--- !u!95 &-6133977692811765920
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2869334391910766264}
+  m_GameObject: {fileID: 2627917600170901844}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a6abbc6234cce6a429aaa780b9c5ea7a, type: 2}

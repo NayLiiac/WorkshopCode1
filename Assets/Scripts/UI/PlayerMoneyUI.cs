@@ -11,7 +11,7 @@ public class PlayerMoneyUI : MonoBehaviour
     private void Start()
     {
         _playerMoney.MoneyAmountChanged += Notify;
-        _moneyText.text = _playerMoney.GetMoneyAmount().ToString();
+        _moneyText.text = $" $ {_playerMoney.GetMoneyAmount()}";
     }
 
     public void Notify(int newMoney)

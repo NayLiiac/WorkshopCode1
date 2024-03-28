@@ -2,6 +2,7 @@
 
 public class Seed : MonoBehaviour
 {
+    public Animator GrowSeedAnim;
     [SerializeField]
     private bool _seedGrownUp;
 
@@ -10,8 +11,6 @@ public class Seed : MonoBehaviour
 
     [field : SerializeField]
     public int PurchasePrice { get; private set; }
-
-    public Animator GrowSeedAnim;
 
     public void SeedGrowthStartAnim()
     {

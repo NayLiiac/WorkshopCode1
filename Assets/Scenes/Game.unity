@@ -359,8 +359,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   _gameObjectTouched: {fileID: 0}
-  _playerMain: {fileID: 0}
+  _playerMain: {fileID: 413414061}
   _merchant: {fileID: 1445471846}
+  _seedSelectorUI: {fileID: 737123827}
 --- !u!114 &413414059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +405,7 @@ MonoBehaviour:
   SeedBag: {fileID: 413414059}
   PlantBag: {fileID: 413414060}
   Money: {fileID: 413414062}
+  <PlAction>k__BackingField: {fileID: 413414058}
 --- !u!114 &413414062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,6 +674,28 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &737123827 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5577432813153590066, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+  m_PrefabInstance: {fileID: 1348111815356683427}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded7ba2a2063fda4dbf833ce9f3ffc26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &737123828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6751567403963794387, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+  m_PrefabInstance: {fileID: 1348111815356683427}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4216690140e27814b827206e6f9a282c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925968467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1160,17 +1184,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 785026439336462536, guid: 0e4413d3b16c2064a9c212b6a1ddbcd4, type: 3}
   m_PrefabInstance: {fileID: 1721480443}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1745204105 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8900570160233868719, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-  m_PrefabInstance: {fileID: 1348111815356683427}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aec7d2645b1fcb54a8cd7e0aa54ff179, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1806377772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,42 +1381,10 @@ PrefabInstance:
       propertyPath: _playerMain
       value: 
       objectReference: {fileID: 413414061}
-    - target: {fileID: 478780088466822491, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 389970643517573754, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1745204105}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SeedBought
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BuySeed, Assembly
-      objectReference: {fileID: 0}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 7632215544601082494, guid: 2025c869df654ca4abd781d6d407c8ec, type: 3}
-    - target: {fileID: 2177466503925906081, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: Seed, Assembly
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 925968467}
     - target: {fileID: 2449465854029880838, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1492,25 +1473,37 @@ PrefabInstance:
       propertyPath: _playerMoney
       value: 
       objectReference: {fileID: 413414062}
-    - target: {fileID: 4586422734337781130, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4717049147862997595, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_text
-      value: Buy 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5492937471795067593, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 6751567403963794387, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: _playerMain
+      value: 
+      objectReference: {fileID: 413414061}
     - target: {fileID: 8309777144100502471, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8855264669086042614, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
-      propertyPath: m_text
-      value: $ 100
+    - target: {fileID: 8416645777240122073, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416645777240122073, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 737123828}
+    - target: {fileID: 8416645777240122073, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChooseThisSeed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416645777240122073, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SeedChosenUI, Assembly
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416645777240122073, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: -425698994660001588, guid: 3d8a84d500ca8e7469f22f8fae8e6e23, type: 3}
+    - target: {fileID: 8416645777240122073, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Seed, Assembly
       objectReference: {fileID: 0}
     - target: {fileID: 8900570160233868719, guid: 42196f0c6d0b41246a023039cc98562c, type: 3}
       propertyPath: _playerMain

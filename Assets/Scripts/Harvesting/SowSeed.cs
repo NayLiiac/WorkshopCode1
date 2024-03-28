@@ -2,7 +2,8 @@
 
 public class SowSeed : MonoBehaviour
 {
-    public Seed SowedSeed;
+    [SerializeField]
+    private Seed _sowedSeed;
     [SerializeField]
     private HarvesterMain _harvesterMain;
     [SerializeField]
@@ -15,10 +16,18 @@ public class SowSeed : MonoBehaviour
 
     public void SowASeed(Seed seed)
     {
-        Debug.Log("Seed Sowed");
-
-        SowedSeed = Instantiate(seed, _spawnpoint);
+        _sowedSeed = Instantiate(seed, _spawnpoint);
         _harvesterMain.Dirt.SetSeedOnThisDirt(true);
         _harvesterMain.Grow.StartGrowingSeed(seed);
+    }
+
+    public Seed GetSowedSeed()
+    {
+        return _sowedSeed;
+    }
+
+    public void SetSowedSeed(Seed seed)
+    {
+        _sowedSeed = seed;
     }
 }
